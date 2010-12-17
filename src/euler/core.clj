@@ -28,12 +28,15 @@
 ; Problem 3
 (defn square [n]
     (* n n))
-    
-(defn sum-of-squares [n]
-    (apply + (map square (natural-numbers (+ n 1)))))
 
+(defn first-n-natural-numbers [n]
+    (natural-numbers (+ n 1)))    
+
+(defn sum-of-squares [n]
+    (apply + (map square (first-n-natural-numbers n))))
+    
 (defn sum-of-first [n]
-    (apply + (natural-numbers (+ n 1))))
+    (apply + (first-n-natural-numbers n)))
     
 (defn square-of-sums [n]
     (square (sum-of-first n)))
