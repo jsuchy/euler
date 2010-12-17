@@ -1,13 +1,13 @@
 # euler
 
-FIXME: write description
+Clojure solutions to the Project Euler problems http://projecteuler.net/
 
 ## Usage
 
-FIXME: write
+lein spec
 
 ## License
 
-Copyright (C) 2010 FIXME
+Copyright (C) 2010 Jim Suchy
 
 Distributed under the Eclipse Public License, the same as Clojure.
