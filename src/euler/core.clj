@@ -44,6 +44,8 @@
 (defn diff-sum-of-squares-and-square-of-sums [n]
     (- (square-of-sums n) (sum-of-squares n)))
 
+;TODO - use something like this to get index tuples
+;(map vector [:a :b :c] (range 1 10))
 ;; Problem 25
 ;
 ;(defn length-of [term]
@@ -57,7 +59,7 @@
 ;
 ;(def index-fib (map vector (iterate inc 0) fib-seq))
 ;
-;(defn index-filter [pred coll] (when pred
+;(defn index-filter [pred coll]
 ;    (for [[idx elt] (index-fib coll) :when (pred elt)] idx)))
 ;    
 ;;(first (filter over-thousand-digits? fib-seq))
